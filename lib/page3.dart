@@ -17,10 +17,7 @@ class PageApp3 extends StatelessWidget{
             child: FlatButton(color: Colors.deepPurple,
               child: Text("Go To Page 1",style: TextStyle(fontSize: 20),),
               onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => PageApp1()),
-                );
+                Navigator.pushNamed(context, '/');
               },
             ),
           ),

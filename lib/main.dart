@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:navigationmy/page1.dart';
+import 'package:navigationmy/page2.dart';
+import 'package:navigationmy/page3.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: "Flutter App",
-        theme: ThemeData(
-          primaryColor: Colors.green,
-        ),
-        home: PageApp1(),
-      ),
-  );
-}
+    initialRoute: '/',
+    routes: {
+      '/': (context) => PageApp1(),
+      '/second': (context) => PageApp2(),
+      '/third': (context) => PageApp3(),
 
+    },
+  ));
+}
 

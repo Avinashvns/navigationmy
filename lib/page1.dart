@@ -18,15 +18,10 @@ class PageApp1 extends StatelessWidget {
             ),
             onPressed: () {
               print("yes");
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => PageApp2()),
-
-              );
+              Navigator.pushNamed(context, '/second');
             },
           ),
         ),
-
     );
   }
 }
